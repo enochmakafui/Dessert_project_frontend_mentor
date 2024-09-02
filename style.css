@@ -141,8 +141,11 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
+  --webkit-perspective: 0;
+  visibility: visible;
   backface-visibility: hidden;
   --webkit-backface-visibility: hidden;
+
 }
 
 .flip-inner.flipped {
