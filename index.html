@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Desserts</h1>
+    </nav>
+    <main>
+      <div class="product-list">
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-waffle-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-waffle-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-waffle-desktop.jpg"
+                alt="Waffle"
+                class="image-card-image"
+              />
+            </picture>
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Waffle</p>
+            <p class="product-title">Waffle with Berries</p>
+            <p class="price">$6.50</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-creme-brulee-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-creme-brulee-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-creme-brulee-desktop.jpg"
+                alt="Vanilla Bean"
+                class="image-card-image"
+              />
+            </picture>
+
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Creme Brùlee</p>
+            <p class="product-title">Vanilla Bean Crème Brûlée</p>
+            <p class="price">$7.00</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-macaron-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-macaron-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-macaron-desktop.jpg"
+                alt="Macaron"
+                class="image-card-image"
+              />
+            </picture>
+
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Macaron</p>
+            <p class="product-title">Macaron Mix of Five</p>
+            <p class="price">$8.00</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-tiramisu-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-tiramisu-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-tiramisu-desktop.jpg"
+                alt="Tiramisu"
+                class="image-card-image"
+              />
+            </picture>
+
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Tiramisu</p>
+            <p class="product-title">Classic Tiramisu</p>
+            <p class="price">$5.50</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-baklava-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-baklava-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-baklava-desktop.jpg"
+                alt="Baklava"
+                class="image-card-image"
+              />
+            </picture>
+
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Baklava</p>
+            <p class="product-title">Pistachio Baklava</p>
+            <p class="price">$4.00</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-meringue-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-meringue-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-meringue-desktop.jpg"
+                alt="Meringue"
+                class="image-card-image"
+              />
+            </picture>
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Pie</p>
+            <p class="product-title">Lemon Meringue Pie</p>
+            <p class="price">$5.00</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-cake-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-cake-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-cake-desktop.jpg"
+                alt="Cake"
+                class="image-card-image"
+              />
+            </picture>
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Cake</p>
+            <p class="product-title">Red Velvet Cake</p>
+            <p class="price">$7.00</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-brownie-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-brownie-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-brownie-desktop.jpg"
+                alt="Brownie"
+                class="image-card-image"
+              />
+            </picture>
+
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Brownie</p>
+            <p class="product-title">Salted Caramel Brownie</p>
+            <p class="price">$4.50</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="image-card">
+            <picture>
+              <source
+                srcset="./assets/images/image-panna-cotta-mobile.jpg"
+                media="(max-width: 500px)"
+              />
+              <source
+                srcset="./assets/images/image-panna-cotta-tablet.jpg"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./assets/images/image-panna-cotta-desktop.jpg"
+                alt="Panna Cotta"
+                class="image-card-image"
+              />
+            </picture>
+
+            <div class="cart-actions">
+              <div class="flip-inner">
+                <button class="add-to-cart-btn">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="cart-icon"
+                  />
+                  Add to Cart
+                </button>
+                <div class="quantity-control">
+                  <button class="decrement">
+                    <img
+                      src="./assets/images/icon-decrement-quantity.svg"
+                      alt="decrement"
+                    />
+                  </button>
+
+                  <p class="quantity">1</p>
+                  <button class="increment">
+                    <img
+                      src="./assets/images/icon-increment-quantity.svg"
+                      alt="increment"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-details">
+            <p class="product-name">Panna Cotta</p>
+            <p class="product-title">Vanilla Panna Cotta</p>
+            <p class="price">$6.50</p>
+          </div>
+        </div>
+      </div>
+      <div class="cart">
+        <h2 class="cart-title">Your Cart( 0 )</h2>
+        <div class="cart-items cart-container">
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            alt="illustration-empty-cart"
+          />
+          <p>Your added items will appear here</p>
+        </div>
+        <div class="order-container"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/enoch-hodo-686739237/"
+          >Enoch Hodo Makafui</a
+        >.
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <img
+        src="./assets/images/icon-order-confirmed.svg"
+        alt="order confirmed"
+        class="order-confirmed-image"
+      />
+      <span class="order-confirmed">
+        <h2>Order confirmed!</h2>
+        <p class="order-message">we hope you enjoy your food!</p>
+      </span>
+      <div class="final-order-container">
+        <div class="final-order"></div>
+        <span class="final-order-total">
+          <p class="final-order-total-title">Order Total</p>
+          <p class="final-order-total-price">$0.00</p>
+        </span>
+      </div>
+      <button class="confirm-btn start-new-order">Start New Order</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
