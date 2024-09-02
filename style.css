@@ -97,6 +97,7 @@ main {
   padding: 0.5rem 1.3rem;
   border: 1px solid var(--Rose-300);
   border-radius: 25px;
+  color: #000;
 }
 
 /* BTN FLIPPER */
@@ -449,6 +450,11 @@ main {
   .product-list {
     grid-template-columns: 1fr;
   }
+  .flip-inner{
+    transform: none;
+
+  }
+  
 }
 /* Tablet design */
 @media (min-width: 769px) and (max-width: 1200px) {
